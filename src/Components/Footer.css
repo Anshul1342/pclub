@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Baloo+Paaji+2:wght@400;500;600&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@100;400;500&family=Quicksand:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.page {
+	margin: 0;
+	padding: 0;
+	height: 200px;
+	width: 100%;
+	background: grey;
+}
+
+* {
+	box-sizing: border-box;
+}
+.footer {
+	background: #303036;
+	color: #d3d3d3;
+	position: static;
+}
+
+.footer .footer-content {
+	display: flex;
+	padding: 1rem 10rem;
+	position: relative;
+}
+
+.footer .footer-bottom {
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 15px;
+	width: 100%;
+}
+.footer .footer-bottom h5 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*pclub logo section*/
+
+.footer-content .logo {
+	background-repeat: no-repeat;
+	width: 30%;
+	padding-top: 3rem;
+	position: relative;
+}
+.footer-content .logo img{
+	width: 200px;
+	transition: 0.4s;
+}
+
+/*info section*/
+
+.footer-content .info-help{
+	position: relative;
+	width: 40%;
+	padding-top: 2rem;
+	padding-right: 1rem;
+}
+.info-help .info-div {
+	font-size: 22px;
+	padding: 1rem 0 1rem 0;
+}
+.info-div span {
+	font-family: 'Quicksand',sans-serif;
+	font-size: 17px;
+	padding-left: 0.4rem;
+	padding-bottom: 0.3rem;
+}
+
+/*updates section*/
+
+.footer-content .update {
+	position: relative;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	width: 30%;
+}
+.footer-content .update h1{
+	font-size: 35px;
+	font-family: 'Quicksand', sans-serif;
+}
+.footer-content .update h5{
+	font-size: 13px;
+	font-family: 'Quicksand', sans-serif;
+	color: #888;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+/*input email section*/
+
+.form {
+	padding-top: 1.5rem;
+}
+.input {
+	font-family: 'Quicksand', sans-serif ;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 300px;
+	background:transparent;
+	border:none;
+	border-radius: 30px;
+	outline: none;
+	color: white;
+	border: 1px solid white;
+	padding: 6px;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	transition: linear 0.5s;
+}
+.input::placeholder {
+	font-size: 13.5px;
+	color: lime;
+	opacity: 0.6;
+}
+.input:not(:placeholder-shown) {
+	border-color: lime;
+	color: white;
+}
+
+/*input button section*/
+
+.btn-send {
+	font-family: 'Quicksand', sans-serif ;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	background:transparent;
+	color: white;
+	border: 1px solid white;
+	width: 70px;
+	padding: 6px;
+	border-radius: 20px;
+	transition: 0.6s;
+}
+.btn-send:hover {
+	color: lime;
+}
+
+.btn-span {
+	padding-left: 10px;
+}
+
+/*social media icons*/
+
+.media {
+	padding-top:20px;
+}
+.media ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.media ul li {
+	transition: linear 0.5s;
+	padding: 0 10px;
+}
+.media ul li a{
+	font-size: 20px;
+	color: white;
+	transition: 0.5s;
+}
+.media li .icon-1:hover{
+	color: black;
+}
+.media li .icon-2:hover {
+	color: #0077B5;
+	transform: rotate3d(180deg);
+}
+.media li .icon-3:hover{
+	color: #3b5999;
+	transform: rotate3d(180deg);
+}
+.media li .icon-4:hover{
+	color: #e4405f;
+	transform: rotate3d(180deg);
+}
+.media li .icon-5:hover{
+	color: #0088CC;
+	transform: rotate3d(180deg);
+}
+
+/*media section*/
+
+@media only screen and (max-width: 1309px) {
+	.footer .footer-content {
+		padding: 3rem 5rem;
+	}
+}
+@media only screen and (max-width: 1141px) {
+	.footer-content .logo {
+		padding-right: 0;
+	}
+	.footer-content .info-help {
+		padding-left: 0;
+	}
+	.btn-span {
+		padding-left: 0;
+	}
+	.input {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.footer .footer-content {
+		padding: 3rem 10rem;
+	}
+	.footer-content .update {
+		padding-left: 30px;
+	}
+	.footer-content .logo{
+		padding-left: 0;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #777;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.footer .footer-content {
+		padding: 3rem 5rem;
+	}
+	.footer-content .update {
+		padding-left: 0px;
+	}
+	.footer-content .logo{
+		padding-left: 0;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #777;
+    }
+}
+@media only screen and (max-width: 500px) {
+	.footer .footer-content {
+		padding-top: 5rem;
+	}
+	.footer-content .logo {
+		padding-top: 0;
+	}
+	.footer-content .logo img{
+		width: 130px;
+	}
+	.info-help .info-div{
+		font-size: 18px;
+	}
+	.info-help .info-div span{
+		font-size: 14px;
+	}
+	.btn-span {
+		padding-left: 5px;
+	}
+	.footer-content .update h1 {
+		font-size: 30px
+	}
+	.footer-content .update h5 {
+		font-size: 13px
+	}
+}

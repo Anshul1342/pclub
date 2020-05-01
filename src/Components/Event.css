@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+body
+{
+  margin: 0;
+  padding: 0 ;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+section
+{
+  width : 100% ;
+  height: 100vh ;
+  background-image: url("/images/sfd1.jpeg");
+  background-size: cover;
+}
+section .leftBox
+{
+  width: 50% ;
+  height :  100% ;
+  float: left;
+  padding: 50px ;
+  box-sizing: border-box ;
+}
+section .leftBox .content
+{
+  color : #fff ;
+  background: rgba(0,0,0,.5);
+  padding: 40px ;
+  transition : .5s ;
+}
+
+/* section .leftBox .content:hover
+{
+  background: #E3C1A0;
+} */
+
+
+
+section .leftBox .content h1
+{
+  margin: 0;
+  padding: 10px;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+section .leftbox .content p
+{
+  margin: 10px 0 0 ;
+  padding: 0 ;
+}
+
+section .events
+{
+  position: relative;
+  width: 50% ;
+  height : 100% ;
+  background: rgba(0,0,0,.5);
+  float: right ;
+  box-sizing: border-box;
+}
+
+
+section .events ul
+{
+  position: absolute;
+  top: 50% ;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 40px ;
+  box-sizing: border-box;
+}
+
+
+section .events ul li
+{
+
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  background: #26262647;
+  padding-top: 40px;
+  /* color: #fff; */
+  /* margin: 15px , 0 ; */
+}
+
+
+section .events ul li .time
+{
+  position: relative;
+  padding: 0;
+  background: #26262600;
+  border-sizing : border-box;
+  width: 30%;
+  height: 100% ;
+  float: left;
+  text-align: center;
+  transition: .5s ;
+}
+
+/* .events ul li:hover 
+{
+  border-color: #4DF129;
+  color: #4DF129;
+} */
+
+/* section .events ul li .time:hover
+{
+  color: #4DF129;
+  border-color: #4DF129;
+} */
+
+
+ /* section .events ul li .time:hover
+{
+  border-color:#48F090;
+  color: #48F090;
+} */
+
+section .events ul li .time h2:hover
+{
+  border-color: #48F090;
+  color:#48F090;
+
+}
+/* section .events ul li .details:hover{
+  border-color: #48F090;
+  font-size: 22px;;
+} */
+
+
+
+
+
+section .events ul li .time h2
+{
+  position: absolute;
+  margin: 0;
+  padding: 0 ;
+  top: 50% ;
+  left:50% ;
+  transform: translate(-50%,-50%);
+  color : #fff;
+  font-size: 45px ;
+  line-height: 30px;
+}
+
+
+section .events ul li .time h2 span
+{
+  font-size: 30px;
+}
+
+section .events ul li .details
+{
+  padding-left: 20px ;
+  /* yaha bhe chnges hue ha */
+  /* background : #fff; */
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+  color: #fff;
+}
+
+section .events ul li .details h3
+{
+  position: relative;
+  margin: 0;
+  padding:0;
+  font-size: 22px ;
+}
+
+section .events ul li .details p
+{
+  position: relative;
+  margin: 10px 0 0;
+  padding:0;
+  padding-right: 5px;
+  /* padding-left: 5px; */
+  font-size: 16px ;
+}
+
+section .events ul li .details a
+{
+  display: inline-block;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  padding: 10px 15px;
+  border: 2px solid #262626 ;
+  margin-top: 15px ;
+  font-size: 18px;
+  transition:.5s ;
+  color: #fff;
+  /* float: right; */
+}
+
+section .events ul li .details a:hover
+{
+   /* background: #ffdd2354 */
+  color:#48F090 ;
+  border-color: #48F090 ;
+}
+
+
+@media (max-width:991px)
+{
+  section
+  {
+    height: 100% ;
+    background-position: center ;
+  }
+  section .leftBox
+  {
+    width : 100%;
+    height : auto ;
+    float: none ;
+    padding:20px ;
+  }
+
+  section .events
+  {
+    width:100%;
+    height:auto ;
+    background: tranparent ;
+    float: none;
+  }
+
+  section .leftBox .content
+  {
+      padding:20px;
+  }
+  section .leftBox .content h1
+  {
+    font-size: 30px;
+  }
+  section .events ul li
+  {
+    height:auto;
+    /* background: rgba(255, 255, 255, 0.9); */
+  }
+  section .events ul li .time
+  {
+    width:80px ;
+    height:80px ;
+    padding:0;
+  }
+  section .events ul li .time h2
+  {
+    font-size: 30px;
+    line-height : 24px ;
+    color: #fff;
+    /* yaha bhe pange lera hu yeh date vala ha */
+
+  }
+  section .events ul li .time h2 span
+  {
+    font-size: 20px;
+  }
+  /* yaha pange lera hu */
+  section .events ul li .details
+  {
+    width: 100% ;
+    float: none ;
+    padding-left: 100px ;
+    background: tranparent ;
+    /* yaha bhe chnages kiye ha  */
+    /* border:  2px solid #262626 ; */
+    background: #23221b00;
+    color: #fff;
+  }
+  section .events ul li .details a
+  {
+    padding: 5px 10px ;
+    color: #fff;
+    /* yaha bhe pange lera hu */
+  }
+  section .events ul
+  {
+    position: relative;
+    transform: translateY(0px);
+    padding: 0 20px 20px ;
+  }
+}
