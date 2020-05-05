@@ -8,6 +8,14 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import { FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
+// import { faPhone } from '@fortawesome/free-brands-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-brands-svg-icons';
+// import { faMapMarkerAlt } from '@fortawesome/free-brands-svg-icons';
+
 import {faAngellist} from '@fortawesome/free-brands-svg-icons';
 
 
@@ -34,15 +42,21 @@ function footer (){
 				</div>
 				<div className="info-help col-lg-4 col-md-6 col-sm-12 col-12">
 					<div className="info-div location">
-						<i className="fas fa-map-marker-alt"></i>
+						{/* <i className="fas fa-map-marker-alt"></i> */}
+						{/* <FontAwesomeIcon icon = {faMapMarkerAlt} /> */}
+						<FaMapMarkerAlt />
 						<span>Sector 25, Chandigarh, Punjab University</span>
 					</div>
 					<div className="info-div mail">
-						<i className="fas fa-envelope"></i>
+						{/* <i className="fas fa-envelope"></i> */}
+						{/* <FontAwesomeIcon icon = {faEnvelope} /> */}
+						<FaEnvelope />
 						<span>pclubuiet@gmail.com</span>
 					</div>
 					<div className="info-div call">
-						<i className="fa fa-phone"></i>
+						{/* <i className="fa fa-phone"></i> */}
+						{/* <FontAwesomeIcon icon = {faPhone} /> */}
+						<FaPhone />
 						<span>abc: 2345678</span>
 					</div>
 				</div>
