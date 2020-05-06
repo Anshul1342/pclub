@@ -34,20 +34,25 @@ nav{
   /* color: #d3d3d3; */
   color: white;
 }
+.nav-wrapper{
+  margin: 0;
+  padding: 0;
+}
 
 .image{
   float: left;
-  margin-left: 15px;
+  margin-left: 20px;
   /* margin-top: 8px; */
   /* border-radius: 50%; */
-  height: 80px;
-  width: 140px;
-  margin-top: 0;
+  /* height: 80px; */
+  width: 120px;
+  margin-top: 10px;
   padding: 0
 }
 .nav-wrapper{
   margin: 0;
   padding: 0;
+  transform: translateY(-18px);
 }
 nav ul {
   float: right;
@@ -55,12 +60,14 @@ nav ul {
   margin: 0;
   padding: 0;
   line-height: -50px;
+  top:0 ;
   
 }
 nav ul li {
   display: inline-block;
   /* float: left; */
   line-height: -50px;
+  top: 0;
   
 }
 

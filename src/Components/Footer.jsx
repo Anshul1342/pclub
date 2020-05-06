@@ -62,7 +62,7 @@ function footer (){
 				</div>
 				<div className="update col-lg-4 col-md-6 col-sm-12 col-12">
 					<h1>Join Us</h1>
-					<h5>Enter your email and get our latest <br />updateNames.</h5>
+					<h5>Enter your email and get our latest <br />updates</h5>
 					<div className="form">
 						<input type="email" name="email" placeholder="Enter your email" className="input" autocomplete="off" />
 						<span className="btn-span">
